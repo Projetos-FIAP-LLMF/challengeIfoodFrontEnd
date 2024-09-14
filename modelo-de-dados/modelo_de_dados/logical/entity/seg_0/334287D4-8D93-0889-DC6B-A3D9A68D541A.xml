@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="334287D4-8D93-0889-DC6B-A3D9A68D541A" name="ESTOQUE">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:02:50 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="C10D2662-AE78-6DCD-5A79-5B492D080190">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:02:57 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantidade" id="7A3EFA99-E488-6550-7942-09477A5E54D3">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:03:00 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="preco" id="239B67B1-800E-51E3-DB00-E43309702A46">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:03:42 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data entrada" id="358573A6-EFBC-6EE7-C27A-888631C1AECB">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:04:12 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BFA3B0F7-21C8-F075-6C2B-32C2EDCC499D" name="ESTOQUE PK">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:03:30 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C10D2662-AE78-6DCD-5A79-5B492D080190</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

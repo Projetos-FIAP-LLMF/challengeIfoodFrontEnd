@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="399DB285-A907-0CA7-88D9-063525D2B8F5" name="TRANSACAO">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>4DD27B73-3C0B-BDCC-4226-2169580F3904</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="DD62D5C1-AFE4-AA6A-2B84-3C0FB5852CBF">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>557ED1B3-3AA6-E11F-F726-DB47129870CD</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_hora" id="D730DBDC-E796-0015-ED1A-6FD3A1AAC9DD">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-18 00:17:23 UTC</createdTime>
+<generatorID>AF7A9CA3-5D8F-B17E-34C1-090FBAA6EF61</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor" id="99383200-CF6C-8398-45B0-3822C9CC14FE">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-18 00:17:23 UTC</createdTime>
+<generatorID>FF81016F-85F9-4FE8-3930-182F2E55D581</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALDO_id" id="5DE6FB78-77AF-1537-5A66-AB2617A83F42">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-18 00:17:23 UTC</createdTime>
+<generatorID>0F4F3BA2-92BA-6E84-3FCD-1FEE8F53EE70</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C9C6BF79-039D-1992-A2E8-E84151AFABD1" referredColumn="B044CD3F-C2D0-8398-6564-DA54393EEEDE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C8BEF5B-8F1C-8B0F-DC5B-62AE1E25EFEE" name="TRANSFERENCIA_PK">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>1B788EB6-9248-81F8-CF8B-B671AFCF22FD</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD62D5C1-AFE4-AA6A-2B84-3C0FB5852CBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5045AC0-6884-7656-1ADA-33B6B54F5C5A" name="TRANSACAO__IDX">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-18 00:17:23 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>1E78B5E9-BF88-8602-64DA-7CAF25EB314F</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="5DE6FB78-77AF-1537-5A66-AB2617A83F42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="325B9540-B56D-EECA-8A5C-C447711209F6" name="TRANSACAO_SALDO_FK">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-18 00:17:23 UTC</createdTime>
+<generatorID>1E78B5E9-BF88-8602-64DA-7CAF25EB314F</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DE6FB78-77AF-1537-5A66-AB2617A83F42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

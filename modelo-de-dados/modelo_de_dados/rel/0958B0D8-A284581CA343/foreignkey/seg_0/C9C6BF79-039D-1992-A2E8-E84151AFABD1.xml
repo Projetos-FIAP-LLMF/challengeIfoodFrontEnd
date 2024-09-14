@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C9C6BF79-039D-1992-A2E8-E84151AFABD1" containerWithKeyObject="399DB285-A907-0CA7-88D9-063525D2B8F5" localFKIndex="325B9540-B56D-EECA-8A5C-C447711209F6" name="TRANSACAO_SALDO_FK">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-18 00:17:23 UTC</createdTime>
+<generatorID>1E78B5E9-BF88-8602-64DA-7CAF25EB314F</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<referredTableLongName>SALDO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>80F22365-4689-6E5B-C12C-79CD2307E146</referredTableID>
+<keyObject>7302F7F8-C1EB-D317-E68C-7C40C5D952FD</keyObject>
+<referredKeyID>7302F7F8-C1EB-D317-E68C-7C40C5D952FD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_saldo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

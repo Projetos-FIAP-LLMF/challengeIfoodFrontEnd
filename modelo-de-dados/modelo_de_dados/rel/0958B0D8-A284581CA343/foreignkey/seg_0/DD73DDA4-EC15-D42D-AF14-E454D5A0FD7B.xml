@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DD73DDA4-EC15-D42D-AF14-E454D5A0FD7B" containerWithKeyObject="38DC351F-2857-D64E-D335-116660813F22" localFKIndex="39DC8BBB-BF64-6CC7-2187-43C166F726B7" name="NOTIFICACOES_ESTOQUE_FK">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-18 00:17:23 UTC</createdTime>
+<generatorID>678CA002-44F4-A8FD-645B-1BECE01F699A</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<referredTableLongName>ESTOQUE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AD935DEC-46E9-3DF8-89A6-F22788AFF263</referredTableID>
+<keyObject>D809FF80-BFD6-ACDF-838F-E3415463C8EE</keyObject>
+<referredKeyID>D809FF80-BFD6-ACDF-838F-E3415463C8EE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_estoque</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

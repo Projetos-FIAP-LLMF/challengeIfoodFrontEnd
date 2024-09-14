@@ -1,0 +1,143 @@
+@import url("../variaveis.css");
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 50px;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.login-box {
+    max-width: 400px;
+    margin-right: 50px;
+}
+
+.login-box h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--cor-texto-principal);
+}
+
+.login-box h1 span {
+    color: var(--cor-amarelo-principal);
+}
+
+.login-box h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--cor-fundo-secundaria);
+    border-radius: 5px;
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto-principal);
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--cor-texto-principal);
+    color: var(--cor-fundo-principal);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.image-box img {
+    width: 20em;
+    height: auto;
+}
+
+.footer {
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto-principal);
+    padding: 15px 0;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    border-top: 1px solid #fff;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: var(--cor-texto-principal);
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: var(--cor-amarelo-principal);
+}
+
+/* ajuste para tela média */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .image-box img {
+        width: 35em;
+        height: auto;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+/* Ajuste para tela pequena */
+@media (max-width: 576px) {
+    .logo {
+        width: 30px;
+        height: auto;
+    }
+
+    .login-box {
+        margin-top: 4rem;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .image-box img {
+        width: 20em;
+        height: auto;
+    }
+
+    .footer {
+        margin: auto;
+    }
+}

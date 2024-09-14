@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="NIVEL PARCEIRO FK" directorySegmentName="seg_0" id="CED3C54E-27F7-CCD0-C7CB-42D0DB11E5E3">
+<createdBy>vitorneves</createdBy>
+<createdTime>2024-05-17 22:03:00 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<sourcePk>06E76325-D6A7-7F0B-C16D-6725FB92B840</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C2FAE0A3-C547-DBED-2796-E0FE0DF4231A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7B567F8E-A7E3-881E-DF23-08B722E5AB5A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

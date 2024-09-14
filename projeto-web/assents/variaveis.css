@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+
+:root {
+    --cor-fundo-principal: #212121;
+    --cor-fundo-secundaria: #393939;
+    --cor-texto-principal: #E3E3E3;
+    --cor-texto-secundaria: #8D8D8D;
+    
+    --cor-roxo-principal: #6C459D;
+    --cor-roxo-secundaria: #9C76CB;
+    --cor-amarelo-principal: #FB9C0F;
+    --cor-amarelo-secundaria: #f8b044;
+
+    --cor-verde: #15c212;
+    --cor-vermelho: #d41414;
+    --cor-azul: #293ce0;
+
+    --fonte-principal: "Catamaran", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+body {
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto-principal);
+}

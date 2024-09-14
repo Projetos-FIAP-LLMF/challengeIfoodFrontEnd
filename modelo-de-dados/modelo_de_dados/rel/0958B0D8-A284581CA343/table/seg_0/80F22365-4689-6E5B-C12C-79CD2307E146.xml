@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="80F22365-4689-6E5B-C12C-79CD2307E146" name="SALDO">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>C4711F10-A25C-522F-4584-AA697A0171A4</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_saldo" id="B044CD3F-C2D0-8398-6564-DA54393EEEDE">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>606F5247-D08F-6972-1319-162654099630</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NIVEL_id" id="7C9231AD-03C9-A7B2-928F-7011FE263BD3">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>FA62B918-8437-DBB8-01FF-1B9543A271D8</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="60110289-1EA0-4A61-7C2A-D78415A9847B" referredColumn="02BD11F2-2283-1A95-B4FF-D2F870C32D52"/>
+</associations>
+</Column>
+<Column name="valor_atual" id="5C814572-04A2-0D68-1612-EB959A0E624A">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>6B94C5F6-CD97-EA10-4C15-EBB92B7CE1FD</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7302F7F8-C1EB-D317-E68C-7C40C5D952FD" name="SALDO_PK">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>D821928F-7A0E-A144-1A57-475464BDB8EC</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B044CD3F-C2D0-8398-6564-DA54393EEEDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C17610C7-F868-5E74-3CC3-9A8CE462CBD5" name="SALDO__IDX">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C9E0051D-4AD2-F0B7-6926-4FFBCB421E31</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7C9231AD-03C9-A7B2-928F-7011FE263BD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="86BC246E-9171-5E93-2268-34CDF362D4B0" name="SALDO_NIVEL_FK">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>C9E0051D-4AD2-F0B7-6926-4FFBCB421E31</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C9231AD-03C9-A7B2-928F-7011FE263BD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

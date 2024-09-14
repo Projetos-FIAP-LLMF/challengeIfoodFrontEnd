@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C77A0F62-ADE8-E319-2539-30DFE997613B" name="NIVEL">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>7B567F8E-A7E3-881E-DF23-08B722E5AB5A</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="02BD11F2-2283-1A95-B4FF-D2F870C32D52">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>E4C4B0D1-B975-7EE1-0F2C-08864CA7DBCB</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARCEIRO_id" id="F01CFE15-66D7-4EA3-917A-85E51D0796D6">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>3E267DAB-2A79-66B5-78A9-E011618547D7</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7DFE919-DB53-4547-DCB1-08286D609C2C" referredColumn="D27D04D4-1DE5-106B-5DAE-79200A2C79EE"/>
+</associations>
+</Column>
+<Column name="funcao" id="3F4D9C15-213A-3D20-F303-0EDEB03358C5">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[chefe, funcionario, cargo...]]></commentInRDBMS>
+<generatorID>C39E18D1-D655-4312-664B-BFD8E00393FC</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B16160C1-7D2B-2E75-1895-93F69633BD45" name="NIVEL_PK">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>8150B93E-4D3E-A5B3-756E-857F287BA37B</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02BD11F2-2283-1A95-B4FF-D2F870C32D52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8E8A28A-4F77-4B60-ACCE-D37A27E39989" name="NIVEL_PARCEIRO_FK">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>CED3C54E-27F7-CCD0-C7CB-42D0DB11E5E3</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F01CFE15-66D7-4EA3-917A-85E51D0796D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

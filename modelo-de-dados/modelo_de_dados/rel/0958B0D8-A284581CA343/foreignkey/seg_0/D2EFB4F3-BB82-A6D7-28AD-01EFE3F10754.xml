@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D2EFB4F3-BB82-A6D7-28AD-01EFE3F10754" containerWithKeyObject="695E23EF-8F0A-33A5-1044-81A235871752" localFKIndex="FC0FFC44-514A-A3E9-ED46-FACAAE115E54" name="METODO_PAGAMENTO_TRANSACAO_FK">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-18 00:17:23 UTC</createdTime>
+<generatorID>C76540DF-BF3C-C531-B7EB-7A7C6DFCA704</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<referredTableLongName>TRANSACAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>399DB285-A907-0CA7-88D9-063525D2B8F5</referredTableID>
+<keyObject>7C8BEF5B-8F1C-8B0F-DC5B-62AE1E25EFEE</keyObject>
+<referredKeyID>7C8BEF5B-8F1C-8B0F-DC5B-62AE1E25EFEE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_transacao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

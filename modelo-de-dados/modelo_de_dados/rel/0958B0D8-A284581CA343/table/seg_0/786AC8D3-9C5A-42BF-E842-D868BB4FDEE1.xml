@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="786AC8D3-9C5A-42BF-E842-D868BB4FDEE1" name="PAGAMENTO">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>1DF94DE5-FF2A-7D36-6C95-F60274AC5C86</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="1629F8DC-B995-C384-7025-F29C289AB47E">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>D31AF157-3188-6A71-1E20-73DB1B97801B</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_pagamento" id="B157A547-EFEE-7768-A672-214D687A3C95">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>0672C008-D729-ADA8-89E9-1BD92573893B</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PEDIDO_id" id="4AB7CF52-EC46-6C85-056B-F0F7CFBE40FA">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-18 00:17:23 UTC</createdTime>
+<generatorID>DDBFAC2A-706C-6C41-3CA1-704B03FC147E</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0DBF9D31-B88F-661F-48AC-25692F74EAC0" referredColumn="CE49445E-1CC1-A041-B54D-B07C96A06B0C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="71E79917-A0FD-62D1-FB68-6E140D0DDA50" name="PAGAMENTO_PK">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-18 00:17:23 UTC</createdTime>
+<generatorID>F004341E-3F59-3AB6-9987-56AD3121426B</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1629F8DC-B995-C384-7025-F29C289AB47E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D2EC206-FCA5-10C0-ADD4-83C019597193" name="PAGAMENTO__IDX">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-18 00:17:23 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>52EBF7CA-A0C4-7145-EF11-EF40AC79B759</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4AB7CF52-EC46-6C85-056B-F0F7CFBE40FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="753E986B-03EE-D75B-04EE-E15BB92C55BF" name="PAGAMENTO_PEDIDO_FK">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-18 00:17:23 UTC</createdTime>
+<generatorID>52EBF7CA-A0C4-7145-EF11-EF40AC79B759</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AB7CF52-EC46-6C85-056B-F0F7CFBE40FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

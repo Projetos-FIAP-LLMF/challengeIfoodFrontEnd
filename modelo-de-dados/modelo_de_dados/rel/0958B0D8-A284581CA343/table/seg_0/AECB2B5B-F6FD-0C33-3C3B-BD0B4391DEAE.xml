@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AECB2B5B-F6FD-0C33-3C3B-BD0B4391DEAE" name="EMPRESTIMO">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>CF5D5D61-E67D-2A49-292F-81B97EAED4B0</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="1D4F8A67-5DF5-AC6E-0B9B-A94275853183">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>0C365180-891E-775E-53A7-2514157CBB26</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALDO_id" id="99A42015-49AD-5C1C-9649-CDC810E25A66">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>FB19E140-52D3-86A6-6C0E-08186B952803</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9572A3CB-AF01-4DE4-855A-CD8FF56A2320" referredColumn="B044CD3F-C2D0-8398-6564-DA54393EEEDE"/>
+</associations>
+</Column>
+<Column name="valor" id="56B49E87-FC23-BD80-F437-95504281947D">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>8E10608C-F350-704D-9F27-D5670563F4F4</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="parcelas" id="169EC14D-A79B-0314-D5B8-3A05C5B0084E">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>8B90A479-703C-2FE4-6C25-3DB6A3A0DC12</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dia_pagamento" id="653FA5F7-DB26-5D67-7D40-43E289C4C2E8">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>B19375A6-76CC-B383-7023-1C90559D7C58</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="juros" id="C0582081-8CFB-391C-1E53-1E31B52C3D5C">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>066553C0-FF62-1286-2993-3A85D26143F8</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2CFAECD6-11E9-A1C5-9729-E36794880D7F" name="EMPRESTIMO_PK">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>F54D065A-EB51-7197-6F82-A3680C1CE27B</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D4F8A67-5DF5-AC6E-0B9B-A94275853183"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE0101C2-E07D-F70C-3FCC-E2802DA59722" name="EMPRESTIMO_SALDO_FK">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>AAB6292D-AC1F-CF65-FC84-3E6BB9E47C6A</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99A42015-49AD-5C1C-9649-CDC810E25A66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

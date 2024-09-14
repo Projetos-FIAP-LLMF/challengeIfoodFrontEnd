@@ -1,0 +1,163 @@
+@import url("../variaveis.css");
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: var(--cor-fundo-secundaria);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    color: var(--cor-amaralo-principal);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.company-info p {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    color: var(--cor-texto-principal);
+    text-decoration: none;
+}
+
+.logout a {
+    color: var(--cor-amaralo-principal);
+    text-decoration: none;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    color: var(--cor-texto-principal);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    background-color: var(--cor-fundo-secundario);
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.stat-box:last-child {
+    margin-right: 0;
+}
+
+.stat-box span {
+    display: block;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.today-info {
+    background-color: var(--cor-fundo-secundario);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.appointments .appointment {
+    background-color: var(--cor-azul);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.main-panels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.panel {
+    background-color: var(--cor-fundo-secundario);
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.panel:last-child {
+    margin-right: 0;
+}
+
+.stock-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.stock-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.stock-list .percent {
+    color: var(--cor-amaralo-principal);
+}
+
+.performance-chart, .promotions-marketing {
+    background-color: var(--cor-fundo-secundario);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.promotions, .marketing {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+
+.promotion-card {
+    text-align: center;
+}
+
+.promotion-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.promotion-card button, .marketing button {
+    background-color: var(--cor-azul);
+    border: none;
+    color: var(--cor-texto-principal);
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9572A3CB-AF01-4DE4-855A-CD8FF56A2320" containerWithKeyObject="AECB2B5B-F6FD-0C33-3C3B-BD0B4391DEAE" localFKIndex="CE0101C2-E07D-F70C-3FCC-E2802DA59722" name="EMPRESTIMO_SALDO_FK">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:17:54 UTC</createdTime>
+<generatorID>AAB6292D-AC1F-CF65-FC84-3E6BB9E47C6A</generatorID>
+<ownerDesignName>C</ownerDesignName>
+<referredTableLongName>SALDO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>80F22365-4689-6E5B-C12C-79CD2307E146</referredTableID>
+<keyObject>7302F7F8-C1EB-D317-E68C-7C40C5D952FD</keyObject>
+<referredKeyID>7302F7F8-C1EB-D317-E68C-7C40C5D952FD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_saldo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

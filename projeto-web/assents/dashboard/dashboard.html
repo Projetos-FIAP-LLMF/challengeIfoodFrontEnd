@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFood Empreende+ - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="shortcut icon" href="../../images/logo.png" type="image/png">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>iFood Empreende+</h2>
+        <div class="company-info">
+            <p>Nome da Empresa</p>
+            <p>Plano Plus</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Visão Geral</a></li>
+                <li><a href="#">Dashboard</a></li>
+            </ul>
+        </nav>
+        <div class="logout">
+            <a href="#">&#8592; Sair</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>Bem-vindo, [Nome]!</h1>
+            <p>Consulte aqui o resumo diário do seu negócio</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-box">Total de pedidos<br><span>500</span></div>
+            <div class="stat-box">Lucro total<br><span>R$ 1000,00</span></div>
+            <div class="stat-box">Avaliação média<br><span>4.99</span></div>
+            <div class="stat-box">Novos clientes<br><span>59</span></div>
+        </div>
+
+        <div class="today-info">
+            <h3>Hoje<br><span>05 Junho, 2024</span></h3>
+            <div class="appointments">
+                <div class="appointment">Compromisso (1h50m)<br><span>10:00 - 11:50</span></div>
+                <div class="appointment">Compromisso (1h50m)<br><span>10:00 - 11:30</span></div>
+                <div class="appointment">Compromisso (1h50m)<br><span>10:00 - 11:30</span></div>
+            </div>
+        </div>
+
+        <div class="main-panels">
+            <div class="panel">
+                <h3>Receita total</h3>
+                <h2>R$678.90</h2>
+                <p>+20% esse mês</p>
+                <div id="revenue-chart"></div>
+            </div>
+            <div class="panel">
+                <h3>Seu estoque</h3>
+                <ul class="stock-list">
+                    <li>Feijoada <span>1</span> <span class="percent">+84%</span></li>
+                    <li>Coxinha <span>4</span> <span class="percent">-8%</span></li>
+                    <li>Pastel de queijo <span>5</span> <span class="percent">+2%</span></li>
+                    <li>Tapioca <span>6</span> <span class="percent">+33%</span></li>
+                    <li>Caipirinha <span>7</span> <span class="percent">+30%</span></li>
+                    <li>Pão de Queijo <span>8</span> <span class="percent">+15%</span></li>
+                    <li>Acarajé <span>10</span> <span class="percent">-12%</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="performance-chart">
+            <h3>Desempenho por Horário</h3>
+            <div id="performance-chart"></div>
+        </div>
+
+        <div class="promotions-marketing">
+            <div class="promotions">
+                <h3>Promoções em Destaque</h3>
+                <div class="promotion-card">
+                    <img src="../../images/img-promo.png" alt="Promoção">
+                    <p>Nome da Promoção</p>
+                    <p>Descrição da promoção</p>
+                    <button>Gerenciar promoções</button>
+                </div>
+            </div>
+
+            <div class="marketing">
+                <h3>Visão de Marketing</h3>
+                <div id="marketing-chart"></div>
+                <button>Visualizar análise completa</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TRANSACAO SALDO FK" directorySegmentName="seg_0" id="1E78B5E9-BF88-8602-64DA-7CAF25EB314F">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:46:58 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<sourcePk>D821928F-7A0E-A144-1A57-475464BDB8EC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C4711F10-A25C-522F-4584-AA697A0171A4</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>4DD27B73-3C0B-BDCC-4226-2169580F3904</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

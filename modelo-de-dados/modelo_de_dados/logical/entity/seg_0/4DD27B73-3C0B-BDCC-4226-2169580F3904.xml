@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4DD27B73-3C0B-BDCC-4226-2169580F3904" name="TRANSACAO">
+<createdBy>vitorneves</createdBy>
+<createdTime>2024-05-17 21:26:50 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id1" id="557ED1B3-3AA6-E11F-F726-DB47129870CD">
+<createdBy>vitorneves</createdBy>
+<createdTime>2024-05-17 21:38:05 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data hora" id="AF7A9CA3-5D8F-B17E-34C1-090FBAA6EF61">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:43:09 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor" id="FF81016F-85F9-4FE8-3930-182F2E55D581">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:43:13 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SALDO id" id="0F4F3BA2-92BA-6E84-3FCD-1FEE8F53EE70">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:46:58 UTC</createdTime>
+<generatorID>1E78B5E9-BF88-8602-64DA-7CAF25EB314F</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<referedAttribute>606F5247-D08F-6972-1319-162654099630</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="E4137A79-9665-2D6C-DA25-DBF00579D35F">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-18 01:29:06 UTC</createdTime>
+<generatorID>715ADC49-8FFB-3506-2768-77C309353F33</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<referedAttribute>E4C4B0D1-B975-7EE1-0F2C-08864CA7DBCB</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1B788EB6-9248-81F8-CF8B-B671AFCF22FD" name="TRANSFERENCIA PK">
+<createdBy>vitorneves</createdBy>
+<createdTime>2024-05-17 21:39:46 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>557ED1B3-3AA6-E11F-F726-DB47129870CD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

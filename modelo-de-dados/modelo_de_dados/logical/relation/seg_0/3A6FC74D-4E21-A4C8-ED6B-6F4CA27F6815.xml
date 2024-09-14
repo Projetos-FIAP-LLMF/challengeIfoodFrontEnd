@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PEDIDO PARCEIRO FK" directorySegmentName="seg_0" id="3A6FC74D-4E21-A4C8-ED6B-6F4CA27F6815">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 22:42:58 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<sourcePk>06E76325-D6A7-7F0B-C16D-6725FB92B840</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C2FAE0A3-C547-DBED-2796-E0FE0DF4231A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E7724982-4E26-CA5F-C206-E45BB595DC6E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

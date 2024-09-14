@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="NOTIFICACOES ESTOQUE FK" directorySegmentName="seg_0" id="678CA002-44F4-A8FD-645B-1BECE01F699A">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-18 00:04:38 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<sourcePk>BFA3B0F7-21C8-F075-6C2B-32C2EDCC499D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>334287D4-8D93-0889-DC6B-A3D9A68D541A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D168FA2F-262D-3A9A-8124-13732EF5C1C4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="METODO PAGAMENTO PAGAMENTO FK" directorySegmentName="seg_0" id="DBDD48AD-EAA2-BEFC-552D-DB7FCDD70A9C">
+<createdBy>Lauren</createdBy>
+<createdTime>2024-05-17 23:47:36 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="0958B0D8-E794-799D-D1FD-A284581CA343" value="true"/>
+</engineerTo>
+<sourcePk>F004341E-3F59-3AB6-9987-56AD3121426B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1DF94DE5-FF2A-7D36-6C95-F60274AC5C86</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FE436160-D69C-C327-F184-DDF228DB642C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
