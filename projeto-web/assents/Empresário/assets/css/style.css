@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Catamaran", sans-serif;
+}
+
+
+body {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.header {
+    border-radius: 20px;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+}
+
+.intro {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.intro img {
+    max-width: 100%;
+    height: auto;
+}
+
+.intro p {
+    margin-top: 90px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.section-title {
+    background-color: #71499c;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.section {
+    background-color: #2f2f2f;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #71499c;
+    color: #fff;
+}
+
+.product,
+.low-stock,
+.best-sellers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item,
+.stock-item,
+.seller-item {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    flex: 1 1 calc(25% - 10px);
+    text-align: center;
+}
+
+.product-item p,
+.stock-item p,
+.seller-item p {
+    margin: 5px 0;
+}
+
+.footer {
+    background-color: transparent;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #fff;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #d59e3e;
+}
+
+@media (max-width: 1439px) {
+    .intro p {
+        margin-top: 60px;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .product-item,
+    .stock-item,
+    .seller-item {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .intro p {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .product-item,
+    .stock-item,
+    .seller-item {
+        flex: 1 1 100%;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+
+    .footer {
+        margin: auto;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header h1 {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        margin: auto;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+}
