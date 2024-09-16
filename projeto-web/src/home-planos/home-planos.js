@@ -4,3 +4,8 @@ document.querySelectorAll('.plan button').forEach(button => {
         alert('Plano selecionado!');
     });
 });
+
+document.querySelector('a').addEventListener('btn btn-light', function(event) {
+    event.preventDefault();
+        alert("Funcionalidade em construção");
+});
