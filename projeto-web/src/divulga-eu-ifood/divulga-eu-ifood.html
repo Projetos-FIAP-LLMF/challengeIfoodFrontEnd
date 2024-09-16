@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divulga eu Ifood</title>
+    <link rel="stylesheet" href="divulga-eu-ifood.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Divulga eu Ifood</h1>
+        </header>
+        <div class="content">
+            <div class="photo-evaluator">
+                <h2>IA avaliador de fotos</h2>
+                <div class="photo-upload">
+                    <img id="foodImage" src="burger.png" alt="Uploaded Food">
+                    <label for="fileUpload" class="upload-btn">
+                        <input type="file" id="fileUpload" accept="image/*" onchange="previewImage(event)">
+                        <span>Upload Photo</span>
+                    </label>
+                </div>
+                <div class="evaluation-options">
+                    <label><input type="checkbox"> Boa qualidade</label>
+                    <label><input type="checkbox"> Tamanho ideal</label>
+                    <label><input type="checkbox"> Melhor resolução</label>
+                    <label><input type="checkbox"> Nitidez</label>
+                </div>
+            </div>
+            <div class="name-creator">
+                <h2>IA criador de nomes</h2>
+                <button class="clear-chat" onclick="clearChat()">Limpar chat</button>
+                <div class="chat-box" id="chatBox">
+                    <div class="chat-message">Olá, sou Sofia, assistente virtual do Ifood Empreende+, vou te ajudar a criar nomes de produtos e serviços...</div>
+                    <div class="chat-message">Poderia começar me explicando qual é a nova inovação?</div>
+                    <div class="chat-message">Um lanche totalmente inovador, com frango e carne juntos, molho especial do chefe e pão de brioche</div>
+                </div>
+                <input type="text" id="chatInput" placeholder="Digite sua mensagem..." onkeypress="sendMessage(event)">
+            </div>
+        </div>
+        <footer>
+            <p>Todos os direitos reservados. iFoodEmpreende+</p>
+            <div class="social-links">
+                <!-- Add social media icons/links here -->
+            </div>
+        </footer>
+    </div>
+    <script src="divulga-eu-ifood.js"></script>
+</body>
+</html>

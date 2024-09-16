@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+.photo-evaluator, .name-creator {
+    background-color: #262626;
+    padding: 20px;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.photo-evaluator h2, .name-creator h2 {
+    margin-top: 0;
+}
+
+.photo-upload {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.photo-upload img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.upload-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+}
+
+.upload-btn input[type="file"] {
+    display: none;
+}
+
+.evaluation-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.evaluation-options label {
+    display: flex;
+    align-items: center;
+}
+
+.name-creator {
+    position: relative;
+}
+
+.clear-chat {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: #9c27b0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-box {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.chat-message {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #9c27b0;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
