@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="home-usuario.css" />
+</head>
+<body>
+  <div class="container mt-5">
+    <!-- Welcome Section -->
+    <div class="mb-4">
+      <h1 class="text-left">Bem-vindo(a), <span id="username">João</span></h1>
+      <p class="lead text-left">Consulte aqui o resumo diário do seu negócio</p>
+    </div>
+
+    <!-- First Row of Cards -->
+    <div class="row mb-4">
+      <div class="col-md-3 mb-3 d-flex">
+        <div class="card first-row-card flex-fill">
+          <div class="card-body text-center">
+            <h5>Total de Pedidos</h5>
+            <p id="totalPedidos">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3 d-flex">
+        <div class="card first-row-card flex-fill">
+          <div class="card-body text-center">
+            <h5>Lucro Total</h5>
+            <p id="lucroTotal">R$ 0</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3 d-flex">
+        <div class="card first-row-card flex-fill">
+          <div class="card-body text-center">
+            <h5>Avaliação Média</h5>
+            <p id="avaliacaoMedia">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3 d-flex">
+        <div class="card first-row-card flex-fill">
+          <div class="card-body text-center">
+            <h5>Novos Clientes</h5>
+            <p id="novosClientes">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row of Cards -->
+    <div class="row">
+      <div class="col-md-6 mb-3 d-flex">
+        <div class="card flex-fill">
+          <div class="card-body">
+            <h2>Receita Total</h2>
+            <p class="valor">R$678,90</p>
+            <p class="aumento">+20% esse mês</p>
+            <!-- Gráfico de Barras Receita -->
+            <canvas id="graficoReceita"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3 d-flex">
+        <div class="card transacoes-card flex-fill">
+          <div class="card-header">Últimas Transações</div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img src="/projeto-web/images/img-dog.jpg" alt="user-icon" class="mr-2 rounded-circle" />
+                  <div>
+                    <p class="mb-0">Pessoa Teste</p>
+                    <small>2 horas atrás</small>
+                  </div>
+                </div>
+                <span class="badge badge-success">+ R$ 500,00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img src="/projeto-web/images/img-dog.jpg" alt="user-icon" class="mr-2 rounded-circle" />
+                  <div>
+                    <p class="mb-0">Fulano</p>
+                    <small>5 horas atrás</small>
+                  </div>
+                </div>
+                <span class="badge badge-success">+ R$ 10,00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="/projeto-web/images/img-dog.jpg" alt="user-icon" class="mr-2 rounded-circle" />
+                    <div>
+                    <p class="mb-0">Ciclano</p>
+                    <small>1 dia atrás</small>
+                  </div>
+                </div>
+                <span class="badge badge-danger">- R$ 6,00</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-sm mt-3">Ver mais transações</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Row of Cards -->
+    <div class="row mt-4">
+      <div class="col-md-12 d-flex">
+        <div class="card flex-fill">
+          <div class="card-header">Seu Estoque</div>
+          <div class="card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Qtd</th>
+                  <th>Variação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Feijoada</td>
+                  <td>1</td>
+                  <td class="text-danger">+84%</td>
+                </tr>
+                <tr>
+                  <td>Coxinha</td>
+                  <td>4</td>
+                  <td class="text-danger">-8%</td>
+                </tr>
+                <tr>
+                  <td>Pastel de Queijo</td>
+                  <td>5</td>
+                  <td class="text-success">+2%</td>
+                </tr>
+                <tr>
+                  <td>Tapioca</td>
+                  <td>6</td>
+                  <td class="text-success">+33%</td>
+                </tr>
+                <tr>
+                  <td>Caipirinha</td>
+                  <td>7</td>
+                  <td class="text-success">+30%</td>
+                </tr>
+                <tr>
+                  <td>Pão de Queijo</td>
+                  <td>8</td>
+                  <td class="text-success">+15%</td>
+                </tr>
+                <tr>
+                  <td>Acarajé</td>
+                  <td>10</td>
+                  <td class="text-danger">-12%</td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="btn btn-primary mt-3">Ver Detalhes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth Row of Cards -->
+    <div class="row mt-4">
+      <div class="col-md d-flex">
+        <div class="card flex-fill">
+          <div class="card-header">Desempenho por Horário</div>
+          <div class="card-body">
+            <!-- Gráfico de Linhas Desempenho -->
+            <canvas id="graficoDesempenho"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fifth Row of Cards -->
+    <div class="row mt-4 ce">
+      <div class="col-md-6 mb-3 d-flex">
+        <div class="card flex-fill">
+          <div class="card-header">Promoção de Marketing</div>
+          <div class="card-body">
+            <!-- Carrossel de Promoções -->
+            <div id="carrosselMarketing" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/projeto-web/images/img-dog.jpg" class="d-block w-100" alt="Promoção 1">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Nome da Promoção 1</h5>
+                    <p>Descrição da Promoção 1</p>
+                    <a href="#" class="btn btn-custom">Gerenciar Promoções</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/projeto-web/images/img-dog.jpg" class="d-block w-100" alt="Promoção 2">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Nome da Promoção 2</h5>
+                    <p>Descrição da Promoção 2</p>
+                    <a href="#" class="btn btn-custom">Gerenciar Promoções</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/projeto-web/images/img-dog.jpg" class="d-block w-100" alt="Promoção 3">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Nome da Promoção 3</h5>
+                    <p>Descrição da Promoção 3</p>
+                    <a href="#" class="btn btn-custom">Gerenciar Promoções</a>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carrosselMarketing" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carrosselMarketing" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md- mb-3 d-flex">
+        <div class="card small-card flex-fill">
+          <div class="card-header">Visão de Marketing</div>
+          <div class="card-body">
+            <canvas id="graficoVisaoMarketing" width="400" height="300"></canvas>
+            <a href="#" class="btn btn-custom">Visualizar Análise Completa</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap and Chart.js Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- External Script -->
+  <script src="home-usuario.js"></script>
+</body>
+</html>
