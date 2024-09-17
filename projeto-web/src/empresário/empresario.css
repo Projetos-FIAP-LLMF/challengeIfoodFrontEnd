@@ -1,15 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Catamaran", sans-serif;
-}
-
-
-body {
-    background-color: #1e1e1e;
-    color: #fff;
-}
+@import url("../variaveis.css");
 
 .header {
     border-radius: 20px;
@@ -40,7 +29,7 @@ body {
 }
 
 .section-title {
-    background-color: #71499c;
+    background-color: var(--cor-roxo-principal);
     padding: 10px;
     border-radius: 5px;
     margin-top: 20px;
@@ -48,15 +37,15 @@ body {
 }
 
 .section {
-    background-color: #2f2f2f;
+    background-color: var(--cor-fundo-secundaria);
     padding: 20px;
     border-radius: 0 0 10px 10px;
     margin-bottom: 20px;
 }
 
 .btn {
-    background-color: #71499c;
-    color: #fff;
+    background-color: var(--cor-roxo-principal);
+    color: var(--cor-texto-principal);
 }
 
 .product,
@@ -70,8 +59,8 @@ body {
 .product-item,
 .stock-item,
 .seller-item {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--cor-texto-principal);
+    color: var(--cor-texto-escuro);
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
@@ -87,10 +76,10 @@ body {
 
 .footer {
     background-color: transparent;
-    color: #fff;
+    color: var(--cor-texto-principal);
     padding: 20px 0;
     text-align: center;
-    border-top: 1px solid #fff;
+    border-top: 1px solid var(--cor-texto-principal);
 }
 
 .footer-icons {
@@ -108,14 +97,14 @@ body {
 }
 
 .social-icons a {
-    color: #fff;
+    color: var(--cor-texto-principal);
     margin: 0 10px;
     font-size: 20px;
     text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #d59e3e;
+    color: var(--cor-amarelo-principal);
 }
 
 @media (max-width: 1439px) {
@@ -126,9 +115,7 @@ body {
     }
 }
 
-
 @media (max-width: 768px) {
-
     .product-item,
     .stock-item,
     .seller-item {
@@ -142,7 +129,6 @@ body {
 }
 
 @media (max-width: 576px) {
-
     .product-item,
     .stock-item,
     .seller-item {
@@ -156,7 +142,6 @@ body {
     .intro p {
         font-size: 1rem;
     }
-
 
     .footer {
         margin: auto;

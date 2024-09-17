@@ -1,10 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
+@import url("../variaveis.css");
 
 .container {
     max-width: 1200px;
@@ -23,9 +17,9 @@ header {
 }
 
 .photo-evaluator, .name-creator {
-    background-color: #262626;
+    background-color: var(--cor-fundo-principal);
     padding: 20px;
-    border: 2px solid #ffc107;
+    border: 2px solid var(--cor-amarelo-principal);
     border-radius: 10px;
     flex: 1;
 }
@@ -48,11 +42,11 @@ header {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #ffc107;
+    background-color: var(--cor-amarelo-principal);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    color: #000;
+    color: var(--cor-texto-escuro);
 }
 
 .upload-btn input[type="file"] {
@@ -79,14 +73,18 @@ header {
     top: 20px;
     right: 20px;
     padding: 5px 10px;
-    background-color: #9c27b0;
+    background-color: var(--cor-roxo-principal);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
+.clear-chat:hover {
+    background-color: var(--cor-roxo-secundaria);
+}
+
 .chat-box {
-    background-color: #333;
+    background-color: var(--cor-fundo-secundaria);
     padding: 20px;
     border-radius: 10px;
     margin: 20px 0;
@@ -95,7 +93,7 @@ header {
 }
 
 .chat-message {
-    background-color: #444;
+    background-color: var(--cor-fundo-terciaria);
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -104,18 +102,18 @@ header {
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    border: 2px solid #9c27b0;
+    border: 2px solid var(--cor-roxo-principal);
     border-radius: 5px;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto-principal);
 }
 
 .footer {
     background-color: transparent;
-    color: #fff;
+    color: var(--cor-texto-principal);
     padding: 20px 0;
     text-align: center;
-    border-top: 1px solid #fff;
+    border-top: 1px solid var(--cor-texto-principal);
 }
 
 .footer-icons {
@@ -133,12 +131,12 @@ input[type="text"] {
 }
 
 .social-icons a {
-    color: #fff;
+    color: var(--cor-texto-principal);
     margin: 0 10px;
     font-size: 20px;
     text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #d59e3e;
+    color: var(--cor-amarelo-principal);
 }

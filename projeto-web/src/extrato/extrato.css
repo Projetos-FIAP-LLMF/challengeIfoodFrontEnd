@@ -1,10 +1,6 @@
+@import url("../variaveis.css");
+
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Catamaran", sans-serif;
-    background-color: #222529;
-    color: #ffffff;
     align-items: center;
 }
 
@@ -13,7 +9,7 @@ h1 {
 }
 
 thead tr {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--cor-texto-principal);
 }
 
 .table th, .table td {
@@ -29,19 +25,19 @@ thead tr {
 }
 
 .text-success {
-    color: #28a745 !important;
+    color: var(--cor-verde) !important;
 }
 
 .text-danger {
-    color: #dc3545 !important;
+    color: var(--cor-vermelho) !important;
 }
 
 .footer {
     background-color: transparent;
-    color: #fff;
+    color: var(--cor-texto-principal);
     padding: 20px 0;
     text-align: center;
-    border-top: 1px solid #fff;
+    border-top: 1px solid var(--cor-texto-principal)
 }
 
 .footer-icons {
@@ -59,14 +55,14 @@ thead tr {
 }
 
 .social-icons a {
-    color: #fff;
+    color: var(--cor-texto-principal);
     margin: 0 10px;
     font-size: 20px;
     text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #d59e3e;
+    color: var(--cor-amarelo-principal);
 }
 
 @media (min-width: 992px) {
