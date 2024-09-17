@@ -165,8 +165,5 @@ input[type="text"] {
     .content {
         display: flex;
         flex-direction: column;
-        gap: 2%;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
     }
 }
