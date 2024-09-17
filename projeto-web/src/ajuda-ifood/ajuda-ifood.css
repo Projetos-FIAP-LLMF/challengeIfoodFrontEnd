@@ -58,8 +58,8 @@ header h1 {
     border: 2px solid var(--cor-amarelo-principal);
     border-radius: 1.3rem;
     padding: 1.2rem;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,6 +108,5 @@ header h1 {
     .opcoes {
         flex-direction: column;
         align-items: center;
-        gap: 3%;
     }
 }
