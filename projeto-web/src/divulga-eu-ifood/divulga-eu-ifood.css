@@ -7,35 +7,53 @@
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    gap: 35%;
+    margin: 2rem;
+}
+
+header h1 {
+    font-weight: 500;
+    font-size: 2rem;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .content {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 7%;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
 }
 
 .photo-evaluator, .name-creator {
     background-color: var(--cor-fundo-principal);
-    padding: 20px;
+    padding: 1rem;
     border: 2px solid var(--cor-amarelo-principal);
     border-radius: 10px;
     flex: 1;
 }
 
-.photo-evaluator h2, .name-creator h2 {
-    margin-top: 0;
+.photo-evaluator {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .photo-upload {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
     margin-bottom: 20px;
 }
 
 .photo-upload img {
     max-width: 100%;
     border-radius: 10px;
+    width: 10rem;
+    height: auto;
 }
 
 .upload-btn {
@@ -109,10 +127,11 @@ input[type="text"] {
 }
 
 .footer {
-    background-color: transparent;
+    background-color: var(--cor-fundo-principal);
     color: var(--cor-texto-principal);
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
+    font-family: var(--fonte-principal);
     border-top: 1px solid var(--cor-texto-principal);
 }
 
@@ -139,4 +158,15 @@ input[type="text"] {
 
 .social-icons a:hover {
     color: var(--cor-amarelo-principal);
+}
+
+/* ajuste para tela média */
+@media (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
 }

@@ -9,7 +9,7 @@ header {
 
 header h1 {
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -33,7 +33,7 @@ header h1 {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 10%;
+    gap: 7%;
     font-weight: 500;
 }
 
@@ -75,7 +75,7 @@ header h1 {
     padding: 15px 0;
     text-align: center;
     font-family: var(--fonte-principal);
-    border-top: 1px solid #fff;
+    border-top: 1px solid var(--cor-texto-principal);
 }
 
 .footer-icons {
@@ -108,20 +108,6 @@ header h1 {
     .opcoes {
         flex-direction: column;
         align-items: center;
-    }
-
-    .footer p {
-        font-size: 14px;
-    }
-}
-
-/* Ajuste para tela pequena */
-@media (min-width: 576px) {
-    .footer p {
-        font-size: 12px;
-    }
-
-    .footer {
-        margin: auto;
+        gap: 3%;
     }
 }
