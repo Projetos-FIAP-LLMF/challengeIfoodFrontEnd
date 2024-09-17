@@ -1,0 +1,48 @@
+@import url("../variaveis.css");
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 35%;
+    margin: 2rem;
+}
+
+header h1 {
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto-principal);
+    padding: 15px 0;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    border-top: 1px solid var(--cor-texto-principal);
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: var(--cor-texto-principal);
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: var(--cor-amarelo-principal);
+}
