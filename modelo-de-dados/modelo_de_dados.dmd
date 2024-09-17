@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="C" id="D24193A2-CDBD-2879-C79C-6A7A30B4DC92" version="3.5">
-<createdBy>vitorneves</createdBy>
-<createdTime>2024-05-09 19:46:29 UTC</createdTime>
-<ownerDesignName>teste</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>D24193A2-CDBD-2879-C79C-6A7A30B4DC92</designId>
-</OSDM_Design>
