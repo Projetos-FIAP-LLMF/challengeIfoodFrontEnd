@@ -1,4 +1,4 @@
- :root {
+:root {
     /* Paleta de Cores */
     --cor-fundo-principal: #212121;
     --cor-fundo-secundaria: #393939;
@@ -15,23 +15,23 @@
   
     /* Fontes */
     --fonte-principal: "Catamaran", sans-serif;
-  } 
+} 
    
-  /* Estilos Globais */
-  body {
+/* Estilos Globais */
+body {
     background-color: var(--cor-fundo-principal);
     color: var(--cor-texto-principal);
     font-family: var(--fonte-principal);
     margin: 0;
     padding: 0;
-  }
-  
-  .container {
+}
+
+.container {
     padding: 0 15px;
-  }
-  
-  /* Cartões */
-  .card {
+}
+
+/* Cartões */
+.card {
     background-color: var(--cor-fundo-secundaria-alt);
     border: none;
     border-radius: 12px;
@@ -39,58 +39,58 @@
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  }
-  
-  .card-header {
+}
+
+.card-header {
     color: var(--cor-texto-principal-alt);
     font-size: 20px;
     border-bottom: 2px solid var(--cor-roxo-secundaria);
     font-weight: bold;
     border-radius: 12px 12px 0 0;
-  }
-  
-  .card-body {
-    padding: 20px;
+}
+
+.card-body {
+    padding: 15px;
     color: var(--cor-texto-principal-alt);
-  }
-  
-  /* Primeira Linha do Cartão */
-  .first-row-card {
+}
+
+/* Primeira Linha do Cartão */
+.first-row-card {
     background-color: var(--cor-fundo-secundaria-alt);
     color: var(--cor-texto-principal-alt);
-  }
-  
-  .first-row-card h5 {
+}
+
+.first-row-card h5 {
     color: var(--cor-fundo-principal);
     font-size: 18px;
     margin-bottom: 10px;
-  }
-  
-  .first-row-card p {
+}
+
+.first-row-card p {
     color: var(--cor-texto-principal-alt);
     font-size: 32px;
     font-weight: bold;
-  }
-  
-  /* Gráficos */
-  .chart-container {
+}
+
+/* Gráficos */
+.chart-container {
     position: relative;
     height: 200px;
     width: 100%;
     margin-top: 20px;
-  }
-  
-  .chart-container canvas {
+}
+
+.chart-container canvas {
     width: 100% !important;
     height: auto !important;
-  }
-  
-  /* Cartão Pequeno */
-  .small-card {
+}
+
+/* Cartão Pequeno */
+.small-card {
     background-color: var(--cor-fundo-secundaria-alt);
     border: 1px solid var(--cor-roxo-principal);
     color: var(--cor-texto-principal);
@@ -99,242 +99,273 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px;
     text-align: center;
-  }
-  
-  /* Botões */
-  .btn-custom,
-  .btn-info,
-  .btn-warning,
-  .btn-primary {
+}
+
+/* Botões */
+.btn-custom,
+.btn-info,
+.btn-warning,
+.btn-primary {
     border: none;
     border-radius: 8px;
     padding: 10px 20px;
-  }
-  
-  .btn-custom {
+}
+
+.btn-custom {
     background-color: var(--cor-roxo-principal);
     color: var(--cor-texto-principal);
     margin-top: 10px;
-  }
-  
-  .btn-custom:hover {
+}
+
+.btn-custom:hover {
     background-color: var(--cor-roxo-secundaria);
     cursor: pointer;
-  }
-  
-  .btn-info {
+}
+
+.btn-info {
     background-color: var(--cor-roxo-principal);
     color: var(--cor-fundo-secundaria-alt);
-  }
-  
-  .btn-info:hover {
+}
+
+.btn-info:hover {
     background-color: var(--cor-roxo-secundaria);
-  }
-  
-  .btn-warning {
+}
+
+.btn-warning {
     background-color: var(--cor-amarelo-principal);
     color: var(--cor-fundo-secundaria-alt);
-  }
-  
-  .btn-warning:hover {
+}
+
+.btn-warning:hover {
     background-color: var(--cor-amarelo-secundaria);
-  }
-  
-  .btn-primary {
+}
+
+.btn-primary {
     background-color: var(--cor-roxo-principal);
     color: var(--cor-fundo-secundaria-alt);
-  }
-  
-  .btn-primary:hover {
+}
+
+.btn-primary:hover {
     background-color: var(--cor-roxo-secundaria);
-  }
-  
-  /* Listas de Transações */
-  #transacoesList {
+}
+
+/* Listas de Transações */
+#transacoesList {
     list-style: none;
     padding: 0;
     color: var(--cor-texto-principal);
-  }
-  
-  #transacoesList li {
+}
+
+#transacoesList li {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 8px;
     background-color: var(--cor-roxo-principal);
     color: var(--cor-fundo-secundaria-alt);
-  }
-  
-  /* Compromissos */
-  .compromissos-card {
+}
+
+/* Compromissos */
+.compromissos-card {
     background-color: var(--cor-fundo-secundaria-alt);
     color: var(--cor-texto-principal);
     height: auto;
     margin-bottom: 20px;
-  }
-  
-  .compromissos-card .card-header {
+}
+
+.compromissos-card .card-header {
     background-color: var(--cor-fundo-secundaria-alt);
     color: var(--cor-texto-principal);
     border-bottom: 2px solid var(--cor-roxo-secundaria);
     font-size: 24px;
     font-weight: bold;
     padding: 15px;
-  }
-  
-  .compromissos-card .card-body {
+}
+
+.compromissos-card .card-body {
     padding: 15px;
-  }
-  
-  .compromisso-item {
+}
+
+.compromisso-item {
     background-color: var(--cor-roxo-principal);
     color: var(--cor-fundo-secundaria-alt);
     border-radius: 8px;
     margin-bottom: 10px;
     padding: 10px;
-  }
-  
-  .compromisso-item h6 {
+}
+
+.compromisso-item h6 {
     margin: 0;
     font-size: 16px;
-  }
-  
-  .compromisso-item p {
+}
+
+.compromisso-item p {
     margin: 0;
     font-size: 14px;
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
+}
+
+/* Estilo personalizado para a altura consistente dos cartões */
+.card.h-100 {
+    height: 100%;
+}
+
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-responsive {
+    max-height: 200px; /* Ajusta a altura máxima da tabela */
+    overflow-y: auto; /* Adiciona rolagem se o conteúdo exceder a altura */
+}
+
+.carousel-inner img {
+    max-height: 300px; /* Ajusta a altura máxima das imagens no carrossel */
+    object-fit: cover; /* Garante que a imagem cubra o espaço do carrossel sem distorcer */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
     .container {
-      padding: 0 10px;
+        padding: 0 10px;
     }
-  
+
     .card {
-      margin-bottom: 15px;
+        margin-bottom: 15px;
     }
-  
+
     .card-header {
-      font-size: 1.25em;
+        font-size: 1.25em;
     }
-  
+
     .card-body {
-      padding: 15px;
+        padding: 15px;
     }
-  
+
     .chart-container {
-      height: 150px;
+        height: 150px;
     }
-  
+
     .btn-custom {
-      padding: 8px 16px;
+        padding: 8px 16px;
     }
-  
+
     .compromisso-item {
-      font-size: 14px;
+        font-size: 14px;
     }
-  
+
     .first-row-card p {
-      font-size: 28px;
+        font-size: 28px;
     }
-  }
-  
-  @media (max-width: 576px) {
+}
+
+@media (max-width: 576px) {
     .card-header {
-      font-size: 1em;
+        font-size: 1em;
     }
-  
+
     .first-row-card h5 {
-      font-size: 16px;
+        font-size: 16px;
     }
-  
+
     .first-row-card p {
-      font-size: 22px;
+        font-size: 22px;
     }
-  
+
     .chart-container {
-      height: 120px;
+        height: 120px;
     }
-  
+
     .compromisso-item h6 {
-      font-size: 14px;
+        font-size: 14px;
     }
-  
+
     .compromisso-item p {
-      font-size: 12px;
+        font-size: 12px;
     }
-  
+
     .btn-custom {
-      font-size: 14px;
+        font-size: 14px;
     }
-  }
-  
-  /* Outras Estilizações */
-  .card h2 {
+}
+
+/* Outras Estilizações */
+.card h2 {
     font-size: 20px;
     color: var(--cor-texto-secundaria);
-  }
-  
-  .valor {
+}
+
+.valor {
     font-size: 32px;
     color: var(--cor-roxo-principal);
     font-weight: bold;
-  }
-  
-  .aumento {
+}
+
+.aumento {
     font-size: 14px;
     color: var(--cor-texto-secundaria);
     margin-bottom: 20px;
-  }
-  
-  .grafico {
+}
+
+.grafico {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 10px;
-  }
-  
-  .bar {
+}
+
+.bar {
     width: 20px;
     background-color: var(--cor-roxo-principal);
-  }
-  
-  .labels {
+}
+
+.labels {
     display: flex;
     justify-content: space-between;
-  }
-  
-  .labels span {
+}
+
+.labels span {
     font-size: 12px;
     color: var(--cor-texto-secundaria);
-  }
-  
-  .transacoes-card .list-group-item {
+}
+
+.transacoes-card .list-group-item {
     background-color: var(--cor-fundo-secundaria-alt);
     border: none;
-  }
-  
-  .transacoes-card .list-group-item img {
+}
+
+.transacoes-card .list-group-item img {
     width: 30px;
     height: 30px;
-  }
-  
-  .transacoes-card .list-group-item p {
+}
+
+.transacoes-card .list-group-item p {
     margin: 0;
     font-weight: bold;
-  }
-  
-  .transacoes-card .list-group-item small {
+}
+
+.transacoes-card .list-group-item small {
     display: block;
     color: var(--cor-texto-secundaria);
-  }
-  
-  #username {
+}
+
+#username {
     color: var(--cor-roxo-principal);
     font-weight: bold;
-  }
-  
-  canvas {
-    border-radius: 5px;
-    background-color: var(--cor-fundo-secundaria-alt);
-  }
-  
+}
+
+#graficoDesempenho {
+  width: 100% !important;
+  max-width: 1000px; /* Adjust as needed */
+  height: auto !important;
+}
+#graficoVisaoMarketing {
+  width: 100% !important;
+  max-width: 300px; /* Adjust as needed */
+  height: auto !important;
+}
+.small-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
