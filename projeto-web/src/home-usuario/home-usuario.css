@@ -189,13 +189,17 @@
 }
 
 .table-responsive {
-    max-height: 200px; /* Ajusta a altura máxima da tabela */
-    overflow-y: auto; /* Adiciona rolagem se o conteúdo exceder a altura */
+    max-height: 200px;
+    /* Ajusta a altura máxima da tabela */
+    overflow-y: auto;
+    /* Adiciona rolagem se o conteúdo exceder a altura */
 }
 
 .carousel-inner img {
-    max-height: 300px; /* Ajusta a altura máxima das imagens no carrossel */
-    object-fit: cover; /* Garante que a imagem cubra o espaço do carrossel sem distorcer */
+    max-height: 300px;
+    /* Ajusta a altura máxima das imagens no carrossel */
+    object-fit: cover;
+    /* Garante que a imagem cubra o espaço do carrossel sem distorcer */
 }
 
 /* Responsividade */
@@ -323,23 +327,70 @@
     color: var(--cor-texto-secundaria);
 }
 
+.footer {
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    border-top: 1px solid #fff;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icons a:hover {
+    color: var(--cor-amarelo-principal);
+}
+
 #username {
     color: var(--cor-roxo-principal);
     font-weight: bold;
 }
 
 #graficoDesempenho {
-  width: 100% !important;
-  max-width: 1000px; /* Adjust as needed */
-  height: auto !important;
+    width: 100% !important;
+    max-width: 1000px;
+    /* Adjust as needed */
+    height: auto !important;
 }
+
 #graficoVisaoMarketing {
-  width: 100% !important;
-  max-width: 300px; /* Adjust as needed */
-  height: auto !important;
+    width: 100% !important;
+    max-width: 300px;
+    /* Adjust as needed */
+    height: auto !important;
 }
+
 .small-card .card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer {
+        margin: auto;
+    }
 }
