@@ -8,7 +8,7 @@
 - Sabrina Da Silva Pereira - RM557238
 
 ## 📋 Descrição
-Para este desafio do iFood com a FIAP, fizemos o projeto "iFood Empreende+", que consiste em {...}
+Para este desafio da Fiap com o iFood, desenvolvemos o "iFood Empreende+", que consiste em um software para os colaboradores do iFood, com o objetivo de facilitar seu trabalho, tendo apoio de organização de gastos, lucros, estoque, e vendas!
 E para esse projeto, utilizamos o padrão de nomenclatura kebab-case.
 
 ## 🛠️ Tecnologias e ferramentas
