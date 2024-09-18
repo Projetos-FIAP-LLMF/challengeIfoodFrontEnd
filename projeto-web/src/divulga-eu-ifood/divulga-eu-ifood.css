@@ -167,5 +167,8 @@ input[type="text"] {
     .content {
         display: flex;
         flex-direction: column;
+        gap: 4%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
