@@ -1,112 +1,112 @@
 @import url("../variaveis.css");
 
 header {
-    display: flex;
-    justify-content: center;
-    gap: 35%;
-    margin: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 35%;
+  margin: 2rem;
 }
 
 header h1 {
-    font-weight: 500;
-    font-size: 2rem;
-    text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 80%;
-    font-weight: 400;
-    font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 80%;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 .container-texto {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-weight: 500;
-    font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3rem;
 }
 
 .opcoes {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 7%;
-    font-weight: 500;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 7%;
+  font-weight: 500;
 }
 
 .opcoes b {
-    color: var(--cor-amarelo-principal);
+  color: var(--cor-roxo-principal);
 }
 
 .opcoes a {
-    background-color: var(--cor-roxo-secundaria);
-    color: var(--cor-texto-principal);
-    border: none;
-    font-weight: 400;
-    font-size: 1.2rem;
+  background-color: var(--cor-roxo-secundaria);
+  color: var(--cor-texto-principal);
+  border: none;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 .opcoes a:hover {
-    background-color: var(--cor-roxo-principal);
-    color: var(--cor-texto-principal);
+  background-color: var(--cor-roxo-principal);
+  color: var(--cor-texto-principal);
 }
 
-.box1, .box2 {
-    border: 2px solid var(--cor-amarelo-principal);
-    border-radius: 1.3rem;
-    padding: 1.2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 0.5rem;
+.box1,
+.box2 {
+  border: 2px solid var(--cor-amarelo-principal);
+  border-radius: 1.3rem;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
-
 
 .footer {
-    background-color: var(--cor-fundo-principal);
-    color: var(--cor-texto-principal);
-    padding: 15px 0;
-    text-align: center;
-    font-family: var(--fonte-principal);
-    border-top: 1px solid var(--cor-texto-principal);
+  background-color: var(--cor-fundo-principal);
+  color: var(--cor-texto-principal);
+  padding: 15px 0;
+  text-align: center;
+  font-family: var(--fonte-principal);
+  border-top: 1px solid var(--cor-texto-principal);
 }
 
 .footer-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .social-icons {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .social-icons a {
-    color: var(--cor-texto-principal);
-    margin: 0 10px;
-    font-size: 20px;
-    text-decoration: none;
+  color: var(--cor-texto-principal);
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: var(--cor-amarelo-principal);
+  color: var(--cor-amarelo-principal);
 }
 
 /* ajuste para tela média */
 @media (max-width: 768px) {
-    .opcoes {
-        flex-direction: column;
-        align-items: center;
-    }
+  .opcoes {
+    flex-direction: column;
+    align-items: center;
+  }
 }
