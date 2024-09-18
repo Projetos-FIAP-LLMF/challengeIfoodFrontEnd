@@ -8,7 +8,7 @@ const menuIcons = document.querySelectorAll('.menu-icons .icon');
 
 menuIcons.forEach(icon => {
     icon.addEventListener('mouseover', function () {
-        this.style.color = '#DD9D1E';  // Altera a cor para vermelho
+        this.style.color = '#DD9D1E';  // Altera a cor para amarela
     });
     icon.addEventListener('mouseout', function () {
         this.style.color = '#ffffff';  // Volta a cor original (branco)
