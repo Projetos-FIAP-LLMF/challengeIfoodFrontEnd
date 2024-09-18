@@ -100,29 +100,6 @@ thead tr {
     }
 }
 
-@media (max-width: 992px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    .menu-busca {
-        text-align: right;
-        width: 100%;
-    }
-
-    .input-group {
-        margin-bottom: 10px;
-    }
-
-    .table {
-        font-size: 0.9rem;
-    }
-
-    .table th, .table td {
-        padding: 0.5rem;
-    }
-}
-
 @media (max-width: 768px) {
     h1 {
         font-size: 1.5rem;
@@ -150,23 +127,7 @@ thead tr {
         font-size: 0.85rem;
         padding: 4px 0;
     }
-}
 
-@media (max-width: 576px) {
-    .footer p {
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .footer {
-        margin: auto;
-        align-items: center;
-    }
-}
-
-
-
-@media (max-width: 768px) {
     .table-responsive {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
@@ -207,6 +168,12 @@ thead tr {
 
     .footer p {
         font-size: 12px;
+        text-align: center;
+    }
+
+    .footer {
+        margin: auto;
+        align-items: center;
     }
 
     .details-content div {

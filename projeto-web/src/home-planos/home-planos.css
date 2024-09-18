@@ -180,7 +180,6 @@ em {
     color: var(--cor-amarelo-principal);
 }
 
-/* ajuste para tela média */
 @media (min-width: 768px) {
     .container {
         flex-direction: row;
@@ -209,7 +208,6 @@ em {
     }
 }
 
-/* Ajuste para tela pequena */
 @media (max-width: 576px) {
     .frase {
         font-size: 1.2rem;
