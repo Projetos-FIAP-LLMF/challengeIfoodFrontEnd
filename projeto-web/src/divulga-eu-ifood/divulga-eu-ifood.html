@@ -3,9 +3,7 @@
 
 <head>
     <!-- Chamada da CDN da Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -13,31 +11,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iFood Empreende+ - Divulga eu iFood</title>
     <link rel="stylesheet" href="divulga-eu-ifood.css">
-    <link rel="shortcut icon" href="../../assents/logo.png" type="image/png">
+    <link rel="shortcut icon" href="../../assets/logo.png" type="image/png">
 </head>
 
 <body>
     <div class="container">
-        <header><h1>Divulga eu Ifood</h1></header>
-
+        <header>
+            <h1>Divulga eu Ifood</h1>
+        </header>
+        <div class="text">
+            <p>Aproveite o poder da nossa IA para analisar suas fotos <br> e impulsionar suas vendas ao próximo nível!</p>
+        </div>
         <main class="content">
             <div class="photo-evaluator">
                 <h2>IA avaliador de fotos</h2>
                 <div class="photo-upload">
-                    <img id="foodImage" src="../../assents/burger.png" alt="Uploaded Food">
+                    <img id="foodImage" src="../../assets/burger.png" alt="Uploaded Food">
                     <label for="fileUpload" class="upload-btn">
                         <input type="file" id="fileUpload" accept="image/*" onchange="previewImage(event)">
                         <span>Upload Photo</span>
                     </label>
                 </div>
                 <div class="evaluation-options">
-                    <label><input type="checkbox"> Boa qualidade</label>
-                    <label><input type="checkbox"> Tamanho ideal</label>
-                    <label><input type="checkbox"> Melhor resolução</label>
-                    <label><input type="checkbox"> Nitidez</label>
+                    <label><input type="checkbox" class="checkbox"> Boa qualidade</label>
+                    <label><input type="checkbox" class="checkbox"> Tamanho ideal</label>
+                    <label><input type="checkbox" class="checkbox"> Melhor resolução</label>
+                    <label><input type="checkbox" class="checkbox"> Nitidez</label>
                 </div>
             </div>
-            
+
             <div class="name-creator">
                 <h2>IA criador de nomes</h2>
                 <button class="clear-chat" onclick="clearChat()">Limpar chat</button>
@@ -66,4 +68,5 @@
     <script src="divulga-eu-ifood.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
