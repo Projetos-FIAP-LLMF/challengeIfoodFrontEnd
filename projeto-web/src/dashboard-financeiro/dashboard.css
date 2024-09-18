@@ -1,11 +1,4 @@
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  background-color: #1e1e1e;
-  color: #fff;
-  font-family: "Catamaran", sans-serif;
-}
+@import url("../variaveis.css");
 
 .container-dashboard {
   margin-top: 20px;

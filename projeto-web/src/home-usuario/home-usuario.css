@@ -1,30 +1,4 @@
-:root {
-    /* Paleta de Cores */
-    --cor-fundo-principal: #212121;
-    --cor-fundo-secundaria: #393939;
-    --cor-fundo-secundaria-alt: #f1f1f1;
-    --cor-texto-principal: #e3e3e3;
-    --cor-texto-principal-alt: #1d1d1b;
-    --cor-texto-secundaria: #8d8d8d;
-    --cor-roxo-principal: #6c459d;
-    --cor-roxo-secundaria: #9c76cb;
-    --cor-amarelo-principal: #fb9c0f;
-    --cor-amarelo-secundaria: #f8b044;
-    --cor-verde: #15c212;
-    --cor-vermelho: #d41414;
-  
-    /* Fontes */
-    --fonte-principal: "Catamaran", sans-serif;
-} 
-   
-/* Estilos Globais */
-body {
-    background-color: var(--cor-fundo-principal);
-    color: var(--cor-texto-principal);
-    font-family: var(--fonte-principal);
-    margin: 0;
-    padding: 0;
-}
+@import url("../variaveis.css");
 
 .container {
     padding: 0 15px;
@@ -32,7 +6,7 @@ body {
 
 /* Cartões */
 .card {
-    background-color: var(--cor-fundo-secundaria-alt);
+    background-color: var(--cor-texto-principal);
     border: none;
     border-radius: 12px;
     color: var(--cor-texto-principal);
@@ -46,7 +20,7 @@ body {
 }
 
 .card-header {
-    color: var(--cor-texto-principal-alt);
+    color: var(--cor-texto-escuro);
     font-size: 20px;
     border-bottom: 2px solid var(--cor-roxo-secundaria);
     font-weight: bold;
@@ -55,13 +29,13 @@ body {
 
 .card-body {
     padding: 15px;
-    color: var(--cor-texto-principal-alt);
+    color: var(--cor-texto-escuro);
 }
 
 /* Primeira Linha do Cartão */
 .first-row-card {
-    background-color: var(--cor-fundo-secundaria-alt);
-    color: var(--cor-texto-principal-alt);
+    background-color: var(--cor-texto-principal);
+    color: var(--cor-texto-escuro);
 }
 
 .first-row-card h5 {
@@ -71,7 +45,7 @@ body {
 }
 
 .first-row-card p {
-    color: var(--cor-texto-principal-alt);
+    color: var(--cor-texto-escuro);
     font-size: 32px;
     font-weight: bold;
 }
@@ -91,7 +65,7 @@ body {
 
 /* Cartão Pequeno */
 .small-card {
-    background-color: var(--cor-fundo-secundaria-alt);
+    background-color: var(--cor-texto-principal);
     border: 1px solid var(--cor-roxo-principal);
     color: var(--cor-texto-principal);
     border-radius: 8px;
@@ -124,7 +98,7 @@ body {
 
 .btn-info {
     background-color: var(--cor-roxo-principal);
-    color: var(--cor-fundo-secundaria-alt);
+    color: var(--cor-texto-principal);
 }
 
 .btn-info:hover {
@@ -133,7 +107,7 @@ body {
 
 .btn-warning {
     background-color: var(--cor-amarelo-principal);
-    color: var(--cor-fundo-secundaria-alt);
+    color: var(--cor-texto-principal);
 }
 
 .btn-warning:hover {
@@ -142,7 +116,7 @@ body {
 
 .btn-primary {
     background-color: var(--cor-roxo-principal);
-    color: var(--cor-fundo-secundaria-alt);
+    color: var(--cor-texto-principal);
 }
 
 .btn-primary:hover {
@@ -161,19 +135,19 @@ body {
     padding: 10px;
     border-radius: 8px;
     background-color: var(--cor-roxo-principal);
-    color: var(--cor-fundo-secundaria-alt);
+    color: var(--cor-texto-principal);
 }
 
 /* Compromissos */
 .compromissos-card {
-    background-color: var(--cor-fundo-secundaria-alt);
+    background-color: var(--cor-texto-principal);
     color: var(--cor-texto-principal);
     height: auto;
     margin-bottom: 20px;
 }
 
 .compromissos-card .card-header {
-    background-color: var(--cor-fundo-secundaria-alt);
+    background-color: var(--cor-texto-principal);
     color: var(--cor-texto-principal);
     border-bottom: 2px solid var(--cor-roxo-secundaria);
     font-size: 24px;
@@ -187,7 +161,7 @@ body {
 
 .compromisso-item {
     background-color: var(--cor-roxo-principal);
-    color: var(--cor-fundo-secundaria-alt);
+    color: var(--cor-texto-principal);
     border-radius: 8px;
     margin-bottom: 10px;
     padding: 10px;
@@ -330,7 +304,7 @@ body {
 }
 
 .transacoes-card .list-group-item {
-    background-color: var(--cor-fundo-secundaria-alt);
+    background-color: var(--cor-texto-principal);
     border: none;
 }
 
