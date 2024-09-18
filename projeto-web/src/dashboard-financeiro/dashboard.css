@@ -1,5 +1,11 @@
 @import url("../variaveis.css");
 
+body {
+  padding: 20px;
+  margin: 0;
+  align-items: center;
+}
+
 .container-dashboard {
   margin-top: 20px;
 }
@@ -27,6 +33,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.product {
+  width: 100%;
 }
 
 .profit-card {
@@ -86,6 +96,39 @@
   align-items: center;
 }
 
+.footer {
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  font-family: var(--fonte-principal);
+  border-top: 1px solid #fff;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icons a:hover {
+  color: var(--cor-amarelo-principal);
+}
+
 /* Responsivo para telas menores */
 @media (max-width: 768px) {
   .month-card {
@@ -109,6 +152,10 @@
 }
 
 @media (max-width: 576px) {
+  .month {
+    display: none;
+  }
+
   .month-card {
     flex: 1 1 45%;
     margin: 5px;
@@ -126,5 +173,14 @@
 
   .doughnut-box {
     height: 120px;
-  }
+  
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+.footer {
+  margin: auto;
+}
 }
